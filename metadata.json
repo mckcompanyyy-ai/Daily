@@ -1,8 +1,11 @@
 {
   "name": "Günlük Plan",
-  "description": "Kullanıcı dostu, sezgisel ve etkileşimli günlük görev ve alışkanlık takip uygulaması.",
+  "description": "Yapay zeka destekli, kişiselleştirilmiş görev ve alışkanlık takip uygulaması. Üretkenliğinizi artırın ve hedeflerinize ulaşın.",
   "requestFramePermissions": [
     "camera",
     "microphone"
-  ]
+  ],
+  "category": "Productivity",
+  "developer": "Senin Adın",
+  "version": "1.0.0"
 }

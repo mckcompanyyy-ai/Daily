@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# Günlük Plan - Android Kurulum Rehberi
 
-This contains everything you need to run your app locally.
+Bu projeyi bir Android uygulaması (APK/AAB) haline getirmek için aşağıdaki adımları izleyin.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1E0jKyBtbH9gFhxs2y5Hoc99GpYyszXIy
+## 1. Ön Gereksinimler
+* **Node.js:** [nodejs.org](https://nodejs.org/) adresinden LTS sürümünü kurun.
+* **Android Studio:** [developer.android.com](https://developer.android.com/studio) adresinden indirip kurun.
 
-## Run Locally
+## 2. Kurulum Adımları
+Terminali (PowerShell veya CMD) açın ve proje klasöründe şu komutları çalıştırın:
 
-**Prerequisites:**  Node.js
+1. **Bağımlılıkları Yükleyin:**
+   ```bash
+   npm install
+   ```
 
+2. **Android Platformunu Ekleyin:**
+   ```bash
+   npx cap add android
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. **Dosyaları Senkronize Edin:**
+   ```bash
+   npx cap sync android
+   ```
+
+4. **Android Studio'da Açın:**
+   ```bash
+   npx cap open android
+   ```
+
+## 3. Play Store İçin Dosya Oluşturma (.aab)
+Android Studio açıldığında:
+1. Üst menüden **Build > Generate Signed Bundle / APK** seçeneğine tıklayın.
+2. **Android App Bundle** seçeneğini işaretleyin.
+3. Yeni bir "Key Store" (anahtar dosyası) oluşturun (şifrenizi unutmayın!).
+4. İşlem bittiğinde size verilen `.aab` dosyasını Google Play Console'a yükleyebilirsiniz.

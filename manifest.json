@@ -1,0 +1,20 @@
+
+{
+  "short_name": "GünlükPlan",
+  "name": "Günlük Plan: Görev ve Alışkanlık Takibi",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/4345/4345573.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#10b981",
+  "background_color": "#f0fdf4",
+  "orientation": "portrait",
+  "scope": "/",
+  "description": "Yapay zeka destekli günlük planlayıcı ve alışkanlık takipçisi."
+}
