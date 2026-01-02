@@ -1,0 +1,8 @@
+{
+  "name": "Günlük Plan",
+  "description": "Kullanıcı dostu, sezgisel ve etkileşimli günlük görev ve alışkanlık takip uygulaması.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
